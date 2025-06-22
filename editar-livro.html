@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Editar Livro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo" style="height: 60px" />
+    </header>
+
+    <h2 style="margin-left: 40px">Editar Livro</h2>
+    <hr class="titulo-linha" />
+
+    <div class="formulario">
+      <form id="editar-formulario" class="formulario-livro">
+        <input type="text" id="editar-id" placeholder="ID" />
+        <input
+          type="text"
+          id="editar-title"
+          placeholder="Nome do Livro"
+          required
+        />
+        <input
+          type="text"
+          id="editar-year"
+          placeholder="Ano de Publicação"
+          required
+        />
+        <input
+          type="text"
+          id="editar-authors"
+          placeholder="Autor(es)"
+          required
+        />
+        <input type="text" id="editar-genre" placeholder="Gênero" />
+        <input type="text" id="editar-publisher" placeholder="Editora" />
+        <input type="text" id="editar-isbn" placeholder="ISBN" />
+        <input type="text" id="editar-language" placeholder="Idioma" />
+        <input type="number" id="editar-pages" placeholder="Páginas" />
+        <input type="text" id="editar-rating" placeholder="Avaliação" />
+        <input type="text" id="editar-date" placeholder="Data inclusão" />
+        <textarea id="editar-synopsis" placeholder="Sinopse"></textarea>
+
+        <div class="buttons">
+          <button
+            type="button"
+            class="cancelar-btn"
+            onclick="window.location.href='minha-estante.html'"
+          >
+            Cancelar
+          </button>
+          <button type="submit" class="salvar-btn">Salvar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/editar-livro.js"></script>
+  </body>
+</html>

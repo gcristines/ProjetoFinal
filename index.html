@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buscar Livros</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Menu lateral -->
+    <nav id="menu-lateral">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img
+              src="svg/library-svgrepo-com.svg"
+              alt="Minha Biblioteca"
+              width="50"
+              height="50"
+            />
+            <span>Minha Biblioteca</span>
+          </a>
+        </li>
+        <li>
+          <a href="minha-estante.html">
+            <img
+              src="svg/library-book-svgrepo-com.svg"
+              alt="Minha Estante"
+              width="50"
+              height="50"
+            />
+            <span>Minha Estante</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard.html">
+            <img
+              src="svg/graph-svgrepo-com.svg"
+              alt="Dashboard"
+              width="50"
+              height="50"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="conteudo-principal">
+      <header>
+        <div class="header-esquerda">
+          <button
+            id="menu-lateral-btn"
+            class="hamburguer-btn"
+            onclick="menuLateral()"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18M3 12h18M3 18h18"
+                stroke="#333"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <img src="img/logo.png" alt="Logo" style="height: 60px" />
+        </div>
+      </header>
+
+      <div class="conteudo-centralizado">
+        <h1 id="biblioteca-titulo">Minha Biblioteca</h1>
+        <div class="barra-pesquisa">
+          <input type="text" id="barra-busca" placeholder="Buscar livro..." />
+          <button onclick="buscarLivro()">Buscar</button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="pesquisa-modal" class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-btn" onclick="fecharModal()">&times;</span>
+          <h2>Resultados da Busca</h2>
+          <div id="resultado-busca"></div>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner-animacao"></div>
+    <script src="js/script.js"></script>
+    <script src="js/minha-biblioteca.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/animacao.js"></script>
+    <script src="js/menu-lateral.js"></script>
+  </body>
+</html>
